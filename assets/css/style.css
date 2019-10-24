@@ -14,10 +14,6 @@ h1 {color:white;}
     line-height: 1.4;
 }
 
-#charWrap {
-
-}
-
 #charPick, #defend {
     min-height:4em;
     min-width:4em;
@@ -28,6 +24,11 @@ h1 {color:white;}
 }
 #charBank > div {
     float:left;
+    margin-right:1em;
+}
+
+#character {
+    text-align: center;
 }
 
 #attacker #character, #defend  #character, .btn {
@@ -41,13 +42,7 @@ h1 {color:white;}
 
 #defend  #character { background: red;}
 
-#charPick {
-    
-}
 
-#attacker {
-
-}
 
 .btn {
     background: red;
@@ -57,9 +52,7 @@ h1 {color:white;}
     font-weight: bold;
 }
 
-#defend {
-    
-}
+
 
 .clearfix:after {
     content: "";

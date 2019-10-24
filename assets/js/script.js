@@ -7,7 +7,7 @@ $(document).ready(function () {
         Counter: [15, 10, 35, 20],
         bonusAttack: [8, 5, 9, 7],
         health: [120, 100, 150, 180],
-        img: ["assets/img/obi.png", "assets/img/luki.png", "assets/img/sidiou.png", "assets/img/maul.png"],
+        img: ["assets/img/obicrop.png", "assets/img/lukecrop.png", "assets/img/sidiouscrop.png", "assets/img/maulcrop.png"],
         id: ["0", "1", "2", "3"]
     }
     console.log("array built");
