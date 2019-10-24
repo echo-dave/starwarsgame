@@ -35,6 +35,7 @@
     padding:2em;
     display: inline-block;
     color:white;
+    cursor:pointer;
 }
 
 #defend {
