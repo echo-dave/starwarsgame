@@ -46,14 +46,15 @@ $(document).ready(function () {
             $('#wrap').prepend(`<h1 id="pick">Pick your opponent</h1>`);
             hero = true;
             $('#attacker > #character').off();
+            attackHp = chars.health[parseInt($('#attacker > #character').attr("value"))]
 
         } else if (opponent == false) {
             //move to defender box
             $(this).appendTo("#defend");
             opponent = true;
 
-//remove pick defender message
-$('#wrap > h1').remove();
+            //remove pick defender message
+            $('#wrap > h1').remove();
 
             //make attack button
             $(`<div id="attack" class="btn">Attack!</div>`).insertBefore($('#attacker'));
@@ -61,7 +62,7 @@ $('#wrap > h1').remove();
             // message to pick a new opponent for round 2 and 3
             $('#defend + h1').remove();
             //store hp values
-            attackHp = chars.health[parseInt($('#attacker > #character').attr("value"))]
+//possible bug            attackHp = chars.health[parseInt($('#attacker > #character').attr("value"))]
             deffendHp = chars.health[parseInt($('#defend > #character').attr("value"))]
 
             attackerIndex = parseInt($('#attacker #character').attr("value"));
@@ -113,7 +114,7 @@ $('#wrap > h1').remove();
 
                     $('#wrap').prepend(`<div class="gameover">better luck next time</div>`);
                 }
-               
+
 
             }
 
