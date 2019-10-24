@@ -1,0 +1,48 @@
+#wrap {
+     max-width:54em;
+    width: 80%vw;
+    margin: 1.5em auto;
+    padding: 1.5em;
+    background: #eee;
+}
+
+#charWrap {
+
+}
+
+#charPick, #defend {
+    min-height:4em;
+    min-width:4em;
+}
+#charBank {
+    clear:right;
+}
+#charBank > div {
+    float:left;
+}
+
+#charPick {
+    background:rgb(0, 4, 255);
+}
+
+#attacker {
+    background:green;
+}
+
+.btn {
+    background: red;
+    border: solid black .25em;
+    padding:2em;
+    display: inline-block;
+    color:white;
+}
+
+#defend {
+    background:red;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
