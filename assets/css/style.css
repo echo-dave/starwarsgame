@@ -1,13 +1,17 @@
 body {padding:1em;}
+
+h1 {color:white;}
 #wrap {
      max-width:54em;
     width: 80%vw;
     margin: 1.5em auto;
     padding: 1em;
     /*background: #eee;*/
-    background: url(assets/img/xwing.jpg) #eee;
+    background:url(../img/xwing.jpg) #eee;
     border-radius: .125em;
-    border:black solid
+    border:black solid;
+    height:557px;
+    line-height: 1.4;
 }
 
 #charWrap {
@@ -20,6 +24,7 @@ body {padding:1em;}
 }
 #charBank {
     clear:right;
+    color: white;
 }
 #charBank > div {
     float:left;
