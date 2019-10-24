@@ -45,6 +45,7 @@ $(document).ready(function () {
             $('#pick').remove();
             $('#wrap').prepend(`<h1 id="pick">Pick your opponent</h1>`);
             hero = true;
+            $('#attacker > #character').off();
 
         } else if (opponent == false) {
             //move to defender box
