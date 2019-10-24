@@ -1,15 +1,5 @@
-# Basic template for web development
+# StarWars RPG  
 
-## Indludes basic linked files
-* jquery
-* css reset
-* empty styles.css
-* basic typography.css
-* empty script.js
+While not the most challenging of recent projects it sill proved interesting. Short of animations or add / remove mothods I hadn't conisdered moving elements around a page via jquery as was done here via `appendTo`  
 
-
-Currently loaded default font is [Source Sans Pro from Google Fonts](https://fonts.google.com/specimen/Source+Sans+Pro) Another option would be something like [Montserrat - notably light 300](https://fonts.google.com/specimen/Montserrat)
-
-For a nice readable serif font [Roboto Slab could be considered](https://fonts.google.com/specimen/Roboto+Slab) Another strong serif option is [IBM Plex](https://fonts.google.com/specimen/IBM+Plex+Serif)
-
-Index.html also includes javascript section in body
+I often utilize arrays for different purposes but I opted for an object of this project. Doing so allowed me to dynamically generate the character blocks with an index tribute which combine with moving between elements provided a means to track the choices and all the numbers. Needless to say some variables were also needed to simplify some of the functions and data pulls from the object.
