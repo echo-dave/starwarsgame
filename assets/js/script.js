@@ -24,9 +24,7 @@ $(document).ready(function () {
 
     //hp for attacking
     let attackHp
-    console.log(`hp ${attackHp}`)
     let deffendHp
-    console.log(`defend ${deffendHp}`);
 
 
     //build character select
@@ -42,7 +40,6 @@ $(document).ready(function () {
 
     $('#charBank>#character').on("click", function () {
         if (hero == false) {
-            console.log("clicked" + $(this));
             //move to attacker box
             $(this).appendTo("#attacker");
             $('#pick').remove();
@@ -63,8 +60,8 @@ $('#wrap > h1').remove();
             // message to pick a new opponent for round 2 and 3
             $('#defend + h1').remove();
             //store hp values
-            attackHp = chars.health[parseInt($('#attacker #character').attr("value"))]
-            deffendHp = chars.health[parseInt($('#defend #character').attr("value"))]
+            attackHp = chars.health[parseInt($('#attacker > #character').attr("value"))]
+            deffendHp = chars.health[parseInt($('#defend > #character').attr("value"))]
 
             attackerIndex = parseInt($('#attacker #character').attr("value"));
             deffenderIndex = parseInt($('#defend #character').attr("value"));
@@ -102,15 +99,21 @@ $('#wrap > h1').remove();
                     }
                 }
 
+                console.log("counter" + chars.Counter[deffenderIndex]);
                 $('#defend #character li:nth-child(3)').html(deffendHp);
                 attackHp = attackHp - chars.Counter[deffenderIndex];
                 $('#attacker #character li:nth-child(3)').html(attackHp);
                 console.log(`def hp ${deffendHp}`);
-
+                console.log(`attacker hp ${attackHp}`)
+                $('#attacker #character li:nth-child(3)').html(attackHp);
                 if (attackHp <= 0) {
                     attackHp = 0;
+                    $('#attacker #character li:nth-child(3)').html(attackHp);
+
                     $('#wrap').prepend(`<div class="gameover">better luck next time</div>`);
                 }
+               
+
             }
 
         })

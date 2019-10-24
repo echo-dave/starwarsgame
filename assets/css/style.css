@@ -1,9 +1,13 @@
+body {padding:1em;}
 #wrap {
      max-width:54em;
     width: 80%vw;
     margin: 1.5em auto;
-    padding: 1.5em;
-    background: #eee;
+    padding: 1em;
+    /*background: #eee;*/
+    background: url(assets/img/xwing.jpg) #eee;
+    border-radius: .125em;
+    border:black solid
 }
 
 #charWrap {
@@ -21,25 +25,35 @@
     float:left;
 }
 
+#attacker #character, #defend  #character, .btn {
+    padding: .5em 1em;
+    display:inline-block;
+    border-radius: .25em;
+    margin-bottom: 1.5em;
+}
+
+#attacker #character { background:rgba(0, 136, 255, 0.461);}
+
+#defend  #character { background: red;}
+
 #charPick {
-    background:rgb(0, 4, 255);
+    
 }
 
 #attacker {
-    background:green;
+
 }
 
 .btn {
     background: red;
     border: solid black .25em;
-    padding:2em;
-    display: inline-block;
     color:white;
     cursor:pointer;
+    font-weight: bold;
 }
 
 #defend {
-    background:red;
+    
 }
 
 .clearfix:after {
