@@ -57,7 +57,7 @@ $(document).ready(function () {
             $('#wrap > h1').remove();
 
             //make attack button
-            $(`<div id="attack" class="btn">Attack!</div>`).insertBefore($('#attacker'));
+            $(`<button id="attack" class="btn">Attack!</button>`).insertBefore($('#attacker'));
 
             // message to pick a new opponent for round 2 and 3
             $('#defend + h1').remove();
@@ -97,7 +97,7 @@ $(document).ready(function () {
                         opponent = false;
                         return // hero = true , opponent = true;
                     } else {
-                        $('#wrap').prepend(`<div class="gameover">You Win</div>`);
+                        $('#wrap').prepend(`<div class="gameover">You Win!</div>`);
                     }
                 }
 
@@ -112,7 +112,7 @@ $(document).ready(function () {
                     attackHp = 0;
                     $('#attacker #character li:nth-child(3)').html(attackHp);
 
-                    $('#wrap').prepend(`<div class="gameover">better luck next time</div>`);
+                    $('#wrap').prepend(`<div class="gameover">Better luck next time</div>`);
                 }
 
 

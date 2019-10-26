@@ -1,15 +1,23 @@
-body {padding:1em;}
+body {
+    padding:1.5em 1em;
+    background:url(../img/xwing.jpg) #eee ;
+    background-size: cover;
+    background-position:center top;
+    background-repeat: no-repeat;
+    min-height:100vh;
+    box-sizing: border-box;
+}
 
 h1 {color:white;}
 #wrap {
-     max-width:54em;
+    max-width:54em;
     width: 80%vw;
-    margin: 1.5em auto;
-    padding: 1em;
+    margin: 0 auto;
+    padding: 3em 3em 3em 3em;
     /*background: #eee;*/
-    background:url(../img/xwing.jpg) #eee;
-    border-radius: .125em;
-    border:black solid;
+    /* background:url(../img/xwing.jpg) #eee; */
+    border-radius: .5rem;
+    border:rgba(252, 137, 137, 0.671) solid .125em;
     height:557px;
     line-height: 1.4;
 }
@@ -29,16 +37,40 @@ h1 {color:white;}
 
 #character {
     text-align: center;
+    font-size:1.2em;
 }
 
+
 #attacker #character, #defend  #character, .btn {
-    padding: .5em 1em;
+    /* padding: .5em 1em; */
     display:inline-block;
     border-radius: .25em;
     margin-bottom: 1.5em;
 }
 
-#attacker #character { background:rgba(0, 136, 255, 0.461);}
+#attack {
+    font-size:1.2em;
+    padding:.8em 1.2em;
+    transition: all 100ms;
+}
+
+#attack:focus, #attack:hover {
+    box-shadow: 0px 0px .8em .2em red;
+}
+
+#attack:active {
+    translate: (1px,1px);
+    background: rgb(235, 2, 2);
+    box-shadow: none;
+}
+
+#character ul {
+    width:115px;
+    padding: .5em 1em;
+}
+
+
+#attacker #character { background:rgba(0, 136, 255, 0.461);color:white;}
 
 #defend  #character { background: red;}
 
@@ -52,7 +84,10 @@ h1 {color:white;}
     font-weight: bold;
 }
 
-
+.gameover {
+    color:white;
+    font-size:2rem;
+}
 
 .clearfix:after {
     content: "";
