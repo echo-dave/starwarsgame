@@ -13,12 +13,12 @@ h1 {color:white;}
     max-width:54em;
     width: 80%vw;
     margin: 0 auto;
-    padding: 3em 3em 3em 3em;
+    padding: 3em 3em 1em 3em;
     /*background: #eee;*/
     /* background:url(../img/xwing.jpg) #eee; */
     border-radius: .5rem;
     border:rgba(252, 137, 137, 0.671) solid .125em;
-    height:557px;
+    min-height:590px;
     line-height: 1.4;
 }
 
@@ -30,9 +30,21 @@ h1 {color:white;}
     clear:right;
     color: white;
 }
+
+#charBank:after{
+    content:"";
+    width:46em;
+    height:.125em;
+    background:rgba(81, 252, 90, 0.866);
+    display:block;
+}
 #charBank > div {
     float:left;
     margin-right:1em;
+}
+
+#charBank #character li:nth-child(3){
+    color: rgba(81, 252, 90, 0.866);
 }
 
 #character {
@@ -69,10 +81,14 @@ h1 {color:white;}
     padding: .5em 1em;
 }
 
+#character li:first-child {
+    padding-bottom:.4em;
+}
+
 
 #attacker #character { background:rgba(0, 136, 255, 0.461);color:white;}
 
-#defend  #character { background: red;}
+#defend  #character { background: rgba(255, 0, 0, 0.466); color: white;}
 
 
 

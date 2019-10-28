@@ -47,6 +47,8 @@ $(document).ready(function () {
             hero = true;
             $('#attacker > #character').off();
             attackHp = chars.health[parseInt($('#attacker > #character').attr("value"))]
+            let charboxafter = $('#charBank:after').width() -150;
+            $('#charBank:after').css("width","200px");
 
         } else if (opponent == false) {
             //move to defender box
